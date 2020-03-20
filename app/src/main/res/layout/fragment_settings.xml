@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutsettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <Button
+        android:id="@+id/buttonhelp"
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:text="Help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:text="Notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:text="Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification" />
+
+    <Button
+        android:id="@+id/privacy"
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:text="Privacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+    <Button
+        android:id="@+id/terms"
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="28dp"
+        android:text="Terms and conditions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

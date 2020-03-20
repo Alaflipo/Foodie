@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.TermsConditionsSettings">
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="380dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="241dp"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:text="Terms  and conditions"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.226"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/accept_terms2"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:text="Accept Terms and Condititions" />
+
+            <Button
+                android:id="@+id/terms_cond"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:text="Terms and Condtions" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/accept_policy2"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:text="Accept Comany Policy" />
+
+            <Button
+                android:id="@+id/view_policy_button2"
+                android:layout_width="111dp"
+                android:layout_height="60dp"
+                android:text="Policy" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="380dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:text="Share your love"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+                tools:layout_editor_absoluteX="10dp" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="409dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rate_text2"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:text="                                                                                                                                    Rate us"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/rate_button2"
+                android:layout_width="111dp"
+                android:layout_height="63dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/write_feedback_textbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/send_feedback_button2"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="send feedback" />
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
